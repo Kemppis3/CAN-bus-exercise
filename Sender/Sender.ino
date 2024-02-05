@@ -74,7 +74,7 @@ long shuffleNewLimit() {
 }
 
 void changeRainIntensity() {
-  uint8_t randInt = rand() % 3;
+  long randInt = random(0,3);
   switch(randInt) {
     case 0:   rainIntensity = SMALL;
     case 1:   rainIntensity = MEDIUM;
